@@ -1,0 +1,785 @@
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+    {% load static %}
+    <title>LIPOREX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <!-- faviocn -->
+    <link rel="icon" href="/static/img/logo-1.png" sizes="32x32">
+    <link rel="icon" href="/static/img/logo-1.png" sizes="192x192">
+    <link rel="apple-touch-icon-precomposed" href="/static/img/logo1.png">
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/static/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Plugins -->
+    <link href="/static/css/plugins.css" rel="stylesheet">
+    <link href="/static/css/animate.min.css" rel="stylesheet">
+    <link href="/static/css/selectric.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/static/css/custom-classes.css" rel="stylesheet">
+    <link href="/static/css/custom.css" rel="stylesheet">
+    <link href="/static/css/responsive.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="/static/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/fonts/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="canonical" href="https://www.phixai.com/">
+    <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+
+    <style>
+      /*  Rollover image styles  */
+      .figure {
+        position: relative;
+        width: 200px; /* can be omitted for a regular non-lazy image */
+        max-width: 100%;
+      }
+      .figure img.image-hover {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        object-fit: contain;
+        opacity: 0;
+        transition: opacity .2s;
+
+      }
+      .figure:hover img.image-hover {
+        opacity: 1;
+      }
+
+      body{
+          background-image: url("/static/img/health3.jpg");
+          width: auto;
+          background-repeat: no-repeat;
+
+      }
+
+
+
+      k {
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #e3a042, #fff, #e3a042);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: relative;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+
+
+
+divNew {
+  background: 50% 100% / 50% 50% no-repeat
+              radial-gradient(ellipse at bottom, #e3a042, transparent, transparent);
+  -webkit-background-clip: text;
+    position: relative;
+  color: transparent;
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+                glow 2500ms linear infinite 2000ms;
+        }
+
+  @keyframes reveal {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #e3a042
+;
+    }
+  }
+
+
+
+  .wordCarousel {
+    font-size: 36px;
+    font-weight: 100;
+    color: #eee;}
+    diva {
+        overflow: hidden;
+        position: relative;
+        float: right;
+        height: 65px;
+        padding-top: 10px;
+        margin-top: -10px;}
+
+        lia {
+            padding: 0 10px;
+            height: 45px;
+            margin-bottom: 45px;
+            display: block;
+        }
+
+
+
+
+.flip5 { animation: flip5 15s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+
+
+@keyframes flip5 {
+    0% { margin-top: -450px; }
+    5% { margin-top: -360px; }
+    20% { margin-top: -360px; }
+    25% { margin-top: -270px; }
+    40% { margin-top: -270px; }
+    45% { margin-top: -180px; }
+    60% { margin-top: -180px; }
+    65% { margin-top: -90px; }
+    80% { margin-top: -90px; }
+    85% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -450px; }
+}
+
+
+
+
+
+
+
+
+
+body .containerCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0;
+}
+
+body .containerCard .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 10px;
+  transition: 0.5s;
+    background-color: #0d092a;
+}
+
+body .containerCard .card:nth-child(1) .box .content a {
+  background: #e3a042;
+}
+
+body .containerCard .card:nth-child(2) .box .content a {
+  background:#e3a042;
+}
+
+body .containerCard .card:nth-child(3) .box .content a {
+  background: #e3a042;
+}
+
+
+
+
+body .containerCard .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #0d092a;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+body .containerCard .card .box:hover {
+  transform: translateY(-50px);
+}
+
+body .containerCard .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+body .containerCard .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+body .containerCard .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+body .containerCard .card .box .content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+body .containerCard .card .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+body .containerCard .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+body .containerCard .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}
+
+
+
+
+
+
+
+* {
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.r {
+  font-size:3em;
+  font-weight:100;
+  padding:20px 0;
+}
+.btnMore {
+  font-size:1.1em;
+  padding:20px 0;
+  background-color:#e3a042;
+  color:#fff;
+  border-radius:50px;
+  margin: auto;
+  border:20px solid #e3a042;
+}
+.btnMore span {
+  color:white;
+  font-size:0;
+  padding:10px 30px;
+}
+
+.btnMore:hover {
+  padding:20px 50px 20px 10px;
+  border:2px solid #e3a042;
+}
+.btnMore:hover span {
+  font-size:1.0em;
+}
+.btnMore:hover .ico {
+  margin-left: 0px;
+  transform:rotate(360deg);
+}
+.btnMore:hover .span {
+  visibility:visible;
+}
+.ico {
+  transition:all 0.5s;
+  background-color:#e3a042;
+  color:#ffffff;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  margin-left: -50px;
+  margin-top: -10px;
+  font-size: 4em;
+}
+.ico::before {
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  content: "\f102" !important;
+  font-family:Ionicons;
+  margin-left:-5px;
+}
+
+.btnMore:hover .ico::before {
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  content: "\f287" !important;
+  font-family:Ionicons;
+  margin-left:-5px;
+}
+
+
+
+* {
+}
+
+
+.textColor:hover{
+
+    color: #e3a042;
+}
+
+
+.content3 {
+      background: rgb(0, 0, 0); /* Fallback color */
+      background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+      color: white;
+    }
+
+.round3 {
+  border-radius: 30px;
+  padding: 5px;
+}
+
+
+
+.content2 {
+      background: rgb(227, 160, 66); /* Fallback color */
+      background: rgba(227, 160, 66, 0.3); /* Black background with 0.5 opacity */
+      color: white;
+    }
+
+.round2 {
+  border-radius: 30px;
+  padding: 3px;
+}
+
+.item {
+        text-align: center;
+    }
+
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <h1 class="text-center text-uppercase"><span class="d-block p-0" style="color:white;"><div >{{text}}<br></div></span></h1>
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+            <!-- logo -->
+            <div class="content2 round2">
+            <a class="navbar-brand" href="{% url 'mainApp:homeTr' %}">
+                <div class="figure">
+                  <img class="Sirv image-main" data-src="/static/img/logo-2.png">
+                  <img class="Sirv image-hover" data-src="/static/img/logo-2.png">
+                </div>
+
+            </a>
+            </div>
+            <!-- humburger -->
+            <!-- menu items -->
+            <div class="navbar-nav flex-row ml-md-auto d-md-flex">
+                <ul class="navbar-nav ml-auto">
+                    <a class="navbar-brand" data-toggle="modal" data-target="#modalContactForm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                          <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                          <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                        </svg>
+                    </a>
+                    <li class="nav-item  ">
+                        <a href="{% url 'mainApp:homeEn' %}" style="color: #e3a042; text-transform: uppercase;"><b>en</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <section class="home-hero" data-image="/static/img/bg-shapes-home.png" style="background-image: url(/static/img/bg-shapes-home.png);">
+
+        <div class="container" >
+            <div class="row" >
+                <div class="col-md-6 ">
+
+                </div>
+
+                <div class="col-md-6 col-lg-5 mt-auto mb-auto" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <section class="big-section" id="about">
+                            <h1><span class="d-block p-0" style="color: #cb3ac9"><divNew>LIPOREX<br></divNew></span></h1>
+                            <h1><span class="d-block p-0" style="color:white;"><div >Etkili Yağ Yakıcı<br></div></span></h1>
+
+                        <p class="text-extra-medium w-95 line-height-36px md-w-100" style="color: white"><b>LiporeX açlık hissini bastırır, iştah kapatıcı etki gösterir.</b></p>
+                        <p class="text-extra-medium w-95 line-height-36px md-w-100" style="color: white"><b>LiporeX vücuttaki fazla idrar, toksin ve suyu söktürüp şişkinliği giderir.</b></p>
+                        <p class="text-extra-medium w-95 line-height-36px md-w-100" style="color: white"><b>LiporeX içeriği sayesinde vücudunuzu sıkılaştırır.</b></p>
+                        <p class="text-extra-medium w-95 line-height-36px md-w-100" style="color: white"><b>LiporeX özel içeriği sayesinde selülit gibi cilt sorunlarınızı giderir.</b></p>
+                        <p class="text-extra-medium w-95 line-height-36px md-w-100" style="color: white"><b>LiporeX kullanırken muadilleri gibi mide sorunları yaşamazsınız.</b></p>
+                        <p class="text-extra-medium w-95 line-height-36px md-w-100" style="color: white"><b>LiporeX gün boyu dinçlik, enerji ve odak artışı sağlar.</b></p>
+                        <p class="text-extra-medium w-95 line-height-36px md-w-100" style="color: white"><b>LiporeX Hoodia Gordonii, Garcinia Cambogia, Green Tea ve Guarana ekstratı içermektedir.</b></p>
+                        <p class="text-extra-medium w-95 line-height-36px md-w-100" style="color: white"><b>LiporeX, 30 gün için 30 kapsül içermektedir (Her gün 1 kapsül)</b></p>
+                        <div class="container" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                            <div class="content3 round3">
+                                <h4 class="text-center"><span class="d-block p-0" style="color:white;"><div >Ürününüzü Doğrulayın<br></div></span></h4>
+                                <form action={% url 'mainApp:verifyCodeTr' %} method="POST">
+                                        <div>
+                                            {{ form.non_field_errors }}
+                                            {% csrf_token %}
+                                            <div class="fieldWrapper text-center">
+                                                {{ form.prdId.errors }}
+                                                <label for="{{ form.prdId.id_prdId}}" ><p><b>Ürün Kodu:</b></p></label>
+                                                <input type="text" class="form-control" maxlength="12" id="prdId" name="prdId" required>
+                                                {{ form.prdId }}
+                                            </div>
+                                            <br>
+                                            <input type="submit"  class="btn btn-outline-danger btn-lg rounded-pill" value="DOĞRULA">
+
+                                        </div>
+
+                                    </form>
+
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+        <div class="_scrolldown wow animate__fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+            <div class="_bar" ></div>
+            <div class="_text" ><b>aşağı sürükle</b></div>
+            <i class="ion-md-arrow-dropdown" style="color: #e3a042"></i>
+        </div>
+    </section>
+
+
+<section class="home-hero" data-image="/static/img/bg-shapes-home.png" style="background-image: url(/static/img/bg-shapes-home.png);">
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="item" data-aos="fade-right">
+                <div class="thumbnail">
+                    <div class="cntnr">
+                        <div class="content3 round3">
+                            <img class="img-responsive" src="/static/img/greenTea.png" alt="Lights" width="500" height="500">
+                            <div class="caption">
+                                <div class="text-light">
+                                    <h4 class="mb-0" style="color: white"><lia><b>Yeşil Çay Ekstraktı</b></lia></h4>
+                                    <p style="text-align: center"><b>Yeşil çay ekstresi yeşil çay yapraklarından elde edilen bir tür bitkisel karışımdır. İçerisinde bol miktarda faydalı vitamin ve mineral bulundurmaktadır.</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="item" data-aos="fade-up">
+                <div class="thumbnail">
+                    <div class="cntnr">
+                        <div class="content3 round3">
+                            <img class="img-responsive" src="/static/img/kanna.png" alt="Lights" width="500" height="500">
+                            <div class="caption">
+                                <div class="text-light">
+                                    <h4 class="mb-0" style="color: white"><lia><b>Sceletium Tortuosum (Kanna)</b></lia></h4>
+                                    <p style="text-align: center"><b> Sceletium Tortuosum (Kanna), açlık duygusunu bastırır, sakinleştirir ve odak noktasını arttırır.</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="item" data-aos="fade-left">
+                <div class="thumbnail">
+                    <div class="cntnr">
+                        <div class="content3 round3">
+                            <img class="img-responsive" src="/static/img/kafein.png" alt="Lights" width="500" height="500">
+                            <div class="caption">
+                                <div class="text-light">
+                                    <h4 class="mb-0" style="color: white"><lia><b>Kafein</b></lia></h4>
+                                    <p style="text-align: center"><b> Kafein, metabolizmayı uyaran ve bu sayede yağ yakımına yardımcı olan bir maddedir. Kafeinin vücut üzerindeki bu etkisi kilo verme sürecini ve yağ yakımını hızlandırmaktadır.</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+<section class="home-hero" data-image="/static/img/bg-shapes-home.png" style="background-image: url(/static/img/bg-shapes-home.png);">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="item" data-aos="fade-right">
+                <div class="thumbnail">
+                    <div class="cntnr">
+                        <div class="content3 round3">
+                            <img class="img-responsive" src="/static/img/measure.png" alt="Lights" width="100" height="100">
+                            <div class="caption">
+                                <div class="text-light">
+                                    <br>
+                                    <h4 class="mb-0" style="color: white"><lia><b>SIKILAŞTIRMA ETKİSİ</b></lia></h4>
+                                    <p style="text-align: center"><b> LiporeX vücudunuzu sıkılaştırır ve dinçlik verir. Sıkılaştırma etkisi ile selülitleri yok eder.</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="item" data-aos="fade-up">
+                <div class="thumbnail">
+                    <div class="cntnr">
+                        <div class="content3 round3">
+                            <img class="img-responsive" src="/static/img/molecule.png" alt="Lights" width="100" height="100">
+
+                            <div class="caption">
+                                <div class="text-light">
+                                    <br><br>
+                                    <h4 class="mb-0" style="color: white"><lia><b>KALİTELİ HAMMADDE</b></lia></h4>
+                                    <p style="text-align: center"><b> LiporeX muadillerine göre mide yanması ve bulantı gibi şikayetler göstermemektedir.</b></p>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="item" data-aos="fade-up">
+                <div class="thumbnail">
+                    <div class="cntnr">
+                        <div class="content3 round3">
+                            <img class="img-responsive" src="/static/img/energy.png" alt="Lights" width="100" height="100">
+
+                            <div class="caption">
+                                <div class="text-light">
+                                    <br><br><br>
+                                    <h4 class="mb-0" style="color: white"><lia><b>ENERJİ VE GÜÇ</b></lia></h4>
+                                    <p style="text-align: center"><b> LiporeX enerji ve güç vermektedir. Size yorgunluk hissi vermez.</b></p>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="item" data-aos="fade-left">
+                <div class="thumbnail">
+                    <div class="cntnr">
+                        <div class="content3 round3">
+                            <img class="img-responsive" src="/static/img/burn2.png" alt="Lights" width="100" height="100">
+
+                            <div class="caption">
+                                <div class="text-light">
+                                    <br>
+                                    <h4 class="mb-0" style="color: white"><lia><b>YAĞ YAKMA</b></lia></h4>
+                                    <p style="text-align: center"><b> LiporeX yağ yakarken vücutta sarkma sorunu yaşatmamaktadır.</b></p>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+
+
+        <footer style="padding-top: 150px;" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <!-- join our team -->
+                    <!-- no. fact -->
+            <div class="container _Facts mt-88">
+                <div class="row no-gutters">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="_line line-3"><div class="top"></div></div>
+                        <div class="_box">
+                            <h3 style="color: #e3a042"><span>HOODIA GORDONII</span></h3>
+                            <p style="color: white">Her kapsül %40 oranında Kalahari Kaktüsü (Hoodia Gordonii) ekstratı bulunmaktadır..</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="_line line-2"><div class="top"></div></div>
+                        <div class="_box">
+                            <h3 style="color: #e3a042"><span>GARCINIA CAMBOGIA</span></h3>
+                            <p style="color: white">Her kapsülde %20 oranında Garcinia Cambogia ekstratı bulunmaktadır.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="_line line-3"><div class="top"></div></div>
+                        <div class="_box">
+                            <h3 style="color: #e3a042"><span>GREEN TEA</span></h3>
+                            <p style="color: white">Her kapsülde %18 oranda Yeşil Çay (Green Tea) Ekstratı bulunmaktadır.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="_line line-4"><div class="top"></div></div>
+                        <div class="_box">
+                            <h3 style="color: #e3a042"><span>GUARANA</span></h3>
+                            <p style="color: white">Her kapsülde %22 oranda Guarana ekstratı bulunmaktadır.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+                <img src="/static/img/footer.png" alt="" class="w-100 _waves">
+                <div class="container" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="row">
+                        <div class="col-md-8 col-12">
+                            <div class="_aboutText">
+                                <img src="/static/img/logo-2.png" style="width: 500px;height: 500px">
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-6">
+
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <div class="_widget">
+                                <h6>Liporex</h6>
+                                <ul>
+                                    <li><a href="{% url 'mainApp:homeTr' %}">Anasayfa</a></li>
+                                    <li><a href="mailto:info@liporex.com" class="_icon"><i class="fa fa-envelope"></i> info@liporex.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row" style="padding-top: 2rem">
+                        <div class="col-lg-12">
+                            <ul class="_contactInfo">
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+        <div class="copyright">All rights reserved LiporeX 2024.<br></div>
+    </footer>
+
+
+
+
+        <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- Plugins -->
+    <script src="/static/js/plugins.js"></script>
+    <script src="/static/js/wow.min.js"></script>
+    <script src="/static/js/counterup.min.js"></script>
+    <script src="/static/js/jquery.selectric.js"></script>
+    <script src="/static/js/custom.js"></script>
+
+    <script src="/static/js/aos.js"></script>
+    <script>AOS.init();</script>
+
+
+
+
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content content3 round3">
+      <div class="modal-header text-center">
+        <h1 class="mb-3">Bize Yazın</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="container my-5">
+    <div>
+      <form action={% url 'mainApp:emailSendTr' %} method="POST">
+          <div >
+              {% csrf_token %}
+            <label for="name" class="form-label">İsim</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+            <br>
+          <div>
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+            <br>
+          <div>
+            <label for="subject" class="form-label">Konu</label>
+            <input type="text" class="form-control" id="subject" name="subject">
+          </div>
+            <br>
+          <div>
+            <label for="message" class="form-label">Mesaj</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+          </div>
+            <br>
+          <div>
+            <div class="row">
+              <div class="text-center">
+                  <button data-res="<?php echo $sum; ?>" type="submit" class="btn btn-outline-danger btn-lg rounded-pill" data-toggle="tooltip" title="Verify Product" >Submit</button>
+              </div>
+            </div>
+          </div>
+      </form>
+    </div>
+</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>
